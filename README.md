@@ -43,29 +43,35 @@ The requested and exported data include many information.
 - **The menstrual cycle data:** downloaded as a PDF, provides calendar-based visualizations indicating the dates of menstrual and other cycle phases.
 - Here is a summary of the how the process proceeded:
 
-- first I cleaned the menstrual cycle data to ensure correct phase assignment for each day.
 - Data Collection and Preprocessing:
-Menstrual Cycle Data:
+## Menstrual Cycle Data:
+
 Menstrual cycle records were transformed from PDF to CSV format.
 Phase intervals (follicular, ovulation, luteal) were clarified by identifying specific start and end dates for each phase.
-Spotify Streaming History:
+## Spotify Streaming History:
 Streaming history was collected in JSON format and converted to CSV.
 Key metrics, such as timestamps (ts) and whether songs were skipped (skipped), were extracted for analysis.
-High Volume Notifications Data:
+
+## High Volume Notifications Data:
 Apple Health data (HKQuantityTypeIdentifierHeadphoneAudioExposure) was also converted to CSV and analyzed for notifications during each phase.Methodology:
-Visualization of High-Volume Notifications:
+
+## Visualization of High-Volume Notifications:
 By Cycle Phases: A bar chart was created to visualize the number of high-volume notifications across each menstrual cycle phase.
 Comparison of Follicular vs. Luteal Phases: A separate bar chart compared the total high-volume notifications between the follicular and luteal phases.
 Daily Notifications: A daily bar chart highlighted trends in notifications over time.
-Skipped Songs Analysis:
+
+## Skipped Songs Analysis:
 By Phase Intervals: The number of skipped songs was calculated for each phase interval, and a bar chart was generated to visualize the counts.
 Comparison of Averages: The average number of skipped songs for follicular and luteal phases was calculated and visualized using a comparative bar chart.
-Statistical Validation:
+
+## Statistical Validation:
 Scientific and data science methodologies were applied to validate the hypothesis. The statistical significance of the difference in skipped song counts between luteal and follicular phases was tested using appropriate methods (e.g., t-tests, ANOVA).Results:
-High-Volume Notifications:
+
+## High-Volume Notifications:
 Notifications were found to vary across phases, with distinct patterns emerging in daily and phase-specific comparisons.
 A clear distinction was observed in notification counts between follicular and luteal phases.
-Skipped Songs:
+
+## Skipped Songs:
 The analysis revealed a statistically significant increase in skipped song counts during the luteal phase compared to the follicular phase.
 The difference was validated through scientific testing, confirming the hypothesis.
 
@@ -73,7 +79,7 @@ The difference was validated through scientific testing, confirming the hypothes
 
 
 
-Notes: it was a different prject during the proposal time but i had to change/update it due to a update on spotify web api. apparently now it is not posibble to fetch tempo and energy info from web api usin uri.
+### Notes: it was a different prject during the proposal time but i had to change/update it due to a update on spotify web api. apparently now it is not posibble to fetch tempo and energy info from web api usin uri.
 
 
 
