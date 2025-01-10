@@ -5,9 +5,8 @@
 Sabanci University CS210 Introduction to Data Science Course Fall 2023-2024 Term Project.  
 This project analyzes the relationship between menstrual cycle phases and each phases hormonal effects on listening activity by examining whether there is a noticeable shift in the skipped track count during the luteal phase compared to the follicular phase.
 
-Using Spotify's extended streaming history and my menstrual cycle data from the Health app from my phone, it explores potential patterns and correlations between physiological changes and musical preferences.
+Using Spotify's extended streaming history and my menstrual cycle data from the Health app from my phone, it explores potential patterns and correlations between physiological effects of hormonal changes and musical listening habits.
 
-(During the project proposal time the project was about" relationship between menstrual cycle phases and prefered music tempo/energy. my hypothesis was: During the luteal phase of the menstrual cycle, there is a noticeable preference for slow-tempo music compared to the follicular phase, where high-energy, fast-tempo music is more frequently listened to. But I had to update it all since there was a problem with fetching tempo and energy info of each song from Spotify API with their URI. Apparently now it is deprecated to Get Several Tracks' Audio Features using Spotify API.) 
 
 ## Content Overview
 **[Hypothesis](#hypothesis)**
