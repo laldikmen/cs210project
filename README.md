@@ -20,13 +20,13 @@ Using Spotify's extended streaming history and my menstrual cycle data from the 
 
 ## Hypothesis
 
-Hypothesis: During the luteal phase of the menstrual cycle, there is a noticeable preference for slow-tempo music compared to the follicular phase, where high-energy, fast-tempo music is more frequently listened to.
+Hypothesis: The number of skipped songs on Spotify increases during the luteal phase of the menstrual cycle compared to the follicular phase within same menstrual cycle.
 
 ## Motivation
 
-The interaction between physiological states and behavioral patterns is a compelling area of study, particularly in understanding how hormonal changes across the menstrual cycle influence daily preferences. This project aims to explore whether there is a difference in music preferences, specifically tempo and energy levels, during the luteal and follicular phases of the cycle. 
+The interaction between physiological states and behavioral patterns is a compelling area of study, particularly in understanding how hormonal changes across the menstrual cycle influence daily preferences. This project aims to explore whether there is a difference in song skipping frequency, during the luteal and follicular phases of the cycle. 
 
-This study provides an opportunity to investigate potential correlations and gain insights into the subtle effects of biological rhythms on everyday behaviors. This approach not only allows for the application of data science techniques to real-world, multidimensional data but also provides a framework for exploring personalized patterns in an empirical and scientifically grounded manner.
+Audial sensitivity and irritability are higher in the luteal phase due to declining estrogen and serotonin levels, which may lead to increased indecisiveness or dissatisfaction with chosen songs, might make users less satisfied with song choices, leading to frequent skipping. This study provides an opportunity to investigate potential correlations and gain insights into the subtle effects of biological rhythms on everyday behaviors. This approach not only allows for the application of data science techniques to real-world, multidimensional data but also provides a framework for exploring personalized patterns in an empirical and scientifically grounded manner.
 
 
 ## Data Source
@@ -35,15 +35,13 @@ Data sources:
 
 -   Extended streaming data that is directly exported from Spotify with a personal data request.
 -   Menstural cycle data directly exported from Apple Health app.
--   Spotify Web API for obtaining empo or energy information of each song.
 
 ## Data Processing
 
 The requested and exported data include many information.
-- **The Spotify data:** exported as a JSON file, includes information such as the timestamp of when each song was played, track name, artist, and Spotify track URI.
+- **The Spotify data:** exported as a JSON file, includes information such as the timestamp of when each song was played, track name, artist, information on skipping and shuffle as well as Spotify track URI.
 - **The menstrual cycle data:** downloaded as a PDF, provides calendar-based visualizations indicating the dates of menstrual and other cycle phases.
-- Here is a summary of the how will the process proceed:
+- Here is a summary of the how the process proceeded:
 
-- To enrich the Spotify data with features like tempo and energy, the Spotify Web API will be used. By extracting the spotify_track_uri from the JSON file, audio features for each song (e.g., tempo and energy levels) will be retrieved programmatically. For the menstrual cycle data, relevant phase intervals (e.g., follicular, luteal, menstrual) will be extracted either manually or through PDF parsing tools. These intervals will then be aligned with the Spotify data by matching timestamps, enabling analysis of music preferences during different phases of the cycle.
 
 
